@@ -1,7 +1,10 @@
 
 # Products API Project
 
-Description...
+The project consists of three models and one pivot table. Models: User, Role, Product; Pivot table: role_user
+Two types of administrators are defined (admin and editor). This was done only to open the option to update roles in the future, although we will only use admin in the project. Admin is created through the Custom command described in the text below, and the goal is to create a user and assign roles to him by running the command in a few steps. APIs are secured using Laravel Sanctum and RoleMiddleware for different roles. CRUD operations are implemented using the repository pattern.
+API Resource was used to transform the response data and Custom Form Request was used to validate the data.
+The project is partially covered by feature tests, just to see how other tests could be written on the basis of the defined ones
 
 
 ## Installation
@@ -66,4 +69,4 @@ Go to <b>Login user</b> collection and login with email and password you set usi
 
 ## Notice
 
-I approached the creation of the project using Repository Pattern, Middleware, API versioning, ... In any case, It would take more time but the project could be done by applying some additional approaches like: Custom Exceptions and Error Handlers, Services, Docker containers (PHP, Composer, Nginx, PostgreSQL), Permissions etc. 
+I approached the creation of the project using Repository Pattern, Middleware, API versioning, ... In any case, It would take more time but the project could be done by applying some additional approaches like: Custom Exceptions and Error Handlers, Services, Traits, Enums, Docker containers (PHP, Composer, Nginx, PostgreSQL), Permissions etc. 
