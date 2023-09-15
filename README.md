@@ -62,9 +62,7 @@ Download Postman from https://www.postman.com/ then install and import file from
   ./z-postman-json (folder is in the root of the project)
 ```
 
-Go to <b>Login user</b> collection and login with email and password you set using command php artisan users:create (Put email and password in the body section.) After login process you will get Bearer token in response. That token should be set inside <b>Authorization - Bearer Token</b> section for these collections: <b>Store product</b>, <b>Update product</b>, <b>Delete product</b> because only logged in user as admin has an access to those APIs. You don't need a token for collections <b>Get products</b> and <b>Get product</b>. They are public APIs.
-
-For 
+Go to <b>Login user</b> collection and login with email and password you set using command php artisan users:create (Put email and password in the body section.) After you're logged in you will get Bearer token in response. Copy that token and set inside <b>Authorization - Bearer Token</b> section for these collections: <b>Store product</b>, <b>Update product</b>, <b>Delete product</b> because only logged in user as admin has an access to those APIs. You don't need a token for collections <b>Get products</b> and <b>Get product</b>. They are public APIs.
 
 ## Notice
 
